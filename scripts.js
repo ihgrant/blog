@@ -11,7 +11,7 @@ window.setInterval(function () {
         document.getElementById('colors-counter').style.color = 'rgb(' + r + ',' + g + ',' + b + ')';
     } catch (e) {
     }
-    document.getElementById('colors').style.color = 'rgb(' + (r-20) + ',' + (g-20) + ',' + (b-20) + ')';
+    document.getElementById('colors').style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 //    document.getElementById('colors').innerHTML = 'rgb(' + r + ',' + g + ',' + b + ')';
 }, 800);
 
