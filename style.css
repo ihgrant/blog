@@ -17,7 +17,7 @@ p {
     margin: 0;
 }
 .colors {
-    background-color: #fff;
+    background-color: rgb(36, 161, 172);
     color: #fff;
     transition: background .7s ease-in-out;
     -moz-transition: background .7s ease-in-out;
@@ -26,7 +26,9 @@ p {
 #nav {
     list-style: none;
 }
-#nav li {
+#nav li a {
+    color: #fff;
+    text-decoration: none;
     display: block;
     padding: .5rem;
 }
