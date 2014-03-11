@@ -23,18 +23,45 @@ p {
     -moz-transition: background .7s ease-in-out;
     -webkit-transition: background .7s ease-in-out;
 }
+.title {
+    color: #fff;
+}
 #nav {
     list-style: none;
 }
-#nav li a {
+#nav a {
     color: #fff;
     text-decoration: none;
     display: block;
     padding: .5rem;
 }
+#nav a:hover {
+    color: #000;
+}
 #nav li:hover {
+    background-color: #fff;
+}
+/* NIGHT ---------------------------- */
+body.night {
+    background-color: #000;
+}
+.night h1, h2, h3, h4, h5 {
     color: #fff;
-    background-color: #ccc;
+}
+.night p {
+    color: #ccc;
+}
+.night .colors {
+    color: #000;
+}
+.night #nav a {
+    color: #000;
+}
+.night #nav a:hover {
+    color: #fff;
+}
+.night #nav li:hover {
+    background-color: #000;
 }
 
 /* Small screens (default) */

@@ -1,5 +1,10 @@
 /* scripts for blog.chenghiz.net */
 
+var d = new Date();
+if (d.getHours() < 6 || d.getHours() > 18) {
+    nightDay();
+}
+
 window.setInterval(function () {
     'use strict';
     try {
@@ -29,3 +34,9 @@ function rando(v, n, x) {
 		return v;
     }
 }
+
+function nightDay() {
+    var body = document.getElementsByTagName('body')[0];
+    body.classList.toggle('night');
+}
+    
