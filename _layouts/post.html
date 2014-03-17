@@ -9,7 +9,7 @@ title: hmm
         <title>chenghiz.net | BLÖGGN</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
         <link type="text/css" rel="stylesheet" href="{{ site.url }}/css/normalize.css"></link>
         <link type="text/css" rel="stylesheet" href="{{ site.url }}/css/style.css"></link>
     </head>
@@ -32,14 +32,8 @@ title: hmm
                     </ul>
                 </div>
                 <div class="column two-thirds" id="posts">
-                    <ul>
-                      {% for post in site.posts %}
-                        <li>
-                          <a href="{{ post.url }}">{{ post.title }}</a>
-                          {{ post.excerpt }}
-                        </li>
-                      {% endfor %}
-                    </ul>
+                    <h1>{{ post.title }}</h1>
+                    {{ content }}
                 </div>
             </div>
         </div>

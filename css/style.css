@@ -41,6 +41,9 @@ p {
 #nav li:hover {
     background-color: #fff;
 }
+#posts img {
+    width: 100%;
+}
 /* NIGHT ---------------------------- */
 body.night {
     background-color: #000;
