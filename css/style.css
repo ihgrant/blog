@@ -29,14 +29,16 @@ a {
 .title {
     color: #fff;
 }
-#nav {
+.c-sidebar-a {
+    display: block;
+    padding: .5rem;
+}
+.u-list-none {
     list-style: none;
 }
 #nav a {
     color: #fff;
     text-decoration: none;
-    display: block;
-    padding: .5rem;
 }
 #nav a:hover {
     color: #000;
@@ -72,12 +74,12 @@ body.night {
 
 /* Small screens (default) */
 html { font-size: 100%; }
- 
+
 /* Medium screens (640px) */
 @media (min-width: 40rem) {
 html { font-size: 112%; }
 }
- 
+
 /* Large screens (1024px) */
 @media (min-width: 64rem) {
 html { font-size: 120%; }
@@ -107,7 +109,7 @@ html { font-size: 120%; }
 .clearfix:after {
     content: " ";
     display: table;
-} 
+}
 .clearfix:after {
     clear: both;
 }

@@ -59,7 +59,7 @@ var parseName = function (filename) {
 	};
 };
 
-var makePosts = function (SITE_DIR, LAYOUTS_DIR, POSTS_DIR) {
+var makePosts = function (SITE_DIR, LAYOUTS_DIR, POSTS_DIR, SITE_VARS) {
 	var formatPost = function (post) {
 		var postVars = post.contents.attributes;
 		var name = parseName(post.name);
