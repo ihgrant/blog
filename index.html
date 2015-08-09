@@ -1,5 +1,5 @@
 ---
-title: hmm
+posts_per_page: 5
 ---
 <!DOCTYPE html>
 <html>
@@ -27,13 +27,18 @@ title: hmm
                         <li><a href="https://www.flickr.com/photos/chenghiz/">flickr</a></li>
                         <li><a href="https://github.com/ihgrant">github</a></li>
                     </ul>
+                    <ul class="p-0 m-0">
+                        {% for post in site.posts %}
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                        {% endfor %}
+                    </ul>
                 </div>
                 <div class="column two-thirds" id="posts">
                     <ul>
                       {% for post in site.posts %}
                         <li>
                           <a href="{{ post.url }}">{{ post.title }}</a>
-                          {{ post.excerpt }}
+                          {{ post.contents }}
                         </li>
                       {% endfor %}
                     </ul>
