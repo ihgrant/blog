@@ -1,0 +1,25 @@
+{
+  "name": "blog-generator",
+  "version": "1.0.0",
+  "description": "A repository for my person website / blog.",
+  "main": "compiler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ihgrant/ihgrant.github.io.git"
+  },
+  "author": "ihgrant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihgrant/ihgrant.github.io/issues"
+  },
+  "homepage": "https://github.com/ihgrant/ihgrant.github.io",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "front-matter": "^1.0.0",
+    "liquid-node": "^2.5.0",
+    "marked": "^0.3.5"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>chenghiz.net | BLÖGGN</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="/css/normalize.css"></link>
+        <link type="text/css" rel="stylesheet" href="/css/style.css"></link>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="column third colors" style="background-color: rgb(36, 161, 172)">
+                    <a href=""><h1 class="title">BLÖGGN</h1></a>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="column third p-0">
+                    <ul id="nav" class="colors p-0 m-0">
+                        <li><a href="">blog</a></li>
+                        <li><a href="https://www.flickr.com/photos/chenghiz/">flickr</a></li>
+                        <li><a href="https://github.com/ihgrant">github</a></li>
+                    </ul>
+                </div>
+                <div class="column two-thirds" id="posts">
+                    <h1>Line Breaks in React</h1>
+                    <p><img src="{{ site.url }}/assets/IMG_20121016_075410.jpg" alt="Special alt text"></p>
+<p>Recently I had to output some text from a SQL database to a React UI where said text was formatted with newline characters to appear literally in an Access screen. This caused a small problem with my React display, because while the \n characters were coming through in the data just fine, by default React&#39;s interpreter doesn&#39;t do anything with them. Instead of formatted text in paragraphs, the paragraphs came through as one throbbing mass of text.</p>
+<p>Nulla placerat malesuada est, eu posuere nibh consectetur a. Fusce euismod in nulla dictum tempus. Vestibulum posuere orci at tempor ornare. Mauris pretium ligula in adipiscing scelerisque. Nulla vehicula eros ut ornare faucibus. In dignissim eros tempus libero sodales sodales. Integer varius commodo lacus, vitae pellentesque erat auctor sit amet.</p>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="/js/scripts.js" ></script>
+</html>

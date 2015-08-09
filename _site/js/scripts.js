@@ -10,13 +10,15 @@ window.setInterval(function () {
     try {
         var c = document.getElementsByClassName('colors')[0].style.backgroundColor.toString();
         c = c.substring(c.indexOf('(') + 1, c.indexOf(')')).split(',');
-        var r = rando(+c[0], -5, 5),
-            g = rando(+c[1], -5, 5),
-            b = rando(+c[2], -2, 2),
-            colors = document.getElementsByClassName('colors');
+        var color = [
+            rando(+c[0], -5, 5),
+            rando(+c[1], -5, 5),
+            rando(+c[2], -2, 2)
+        ],
+        colors = document.getElementsByClassName('colors');
 //        document.getElementById('colors-counter').style.color = 'rgb(' + r + ',' + g + ',' + b + ')';
         for (var x=0; x<colors.length; x++) {
-            colors[x].style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            colors[x].style.backgroundColor = 'rgb(' + color.join() + ')';
         };
     } catch (e) {
         console.log(e.message);
